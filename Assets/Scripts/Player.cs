@@ -96,7 +96,6 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-
         if (!isDown && !GManager.instance.isGameOver && !GManager.instance.isStageClear)
         {
             //接地判定

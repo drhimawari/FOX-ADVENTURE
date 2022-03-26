@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class ContinuePoint : MonoBehaviour
 {
+    #region//インスペクターで設定する
     [Header("コンティニュー番号")] public int continueNum;
-    [Header("音")] public AudioClip se;
+    [Header("接触時の音")] public AudioClip se;
     [Header("プレイヤー判定")] public PlayerTriggerCheck trigger;
     [Header("スピード")] public float speed = 3.0f;
     [Header("振動幅")] public float moveDis = 3.0f;
+    #endregion
 
+    #region//プライベート変数
     private bool on = false;
     private float kakudo = 0.0f;
     private Vector3 defaultPos;
+    #endregion
 
     void Start()
     {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy_Zako2 : MonoBehaviour
 {
+    public GameObject blockPrefab;
+
     #region//インスペクターで設定する
     [Header("加算スコア")] public int myScore;
     [Header("速度")] public float speed;
@@ -11,9 +13,6 @@ public class Enemy_Zako2 : MonoBehaviour
     [Header("画面外でも動作する")] public bool nonVisibleAct;
     [Header("衝突チェック")] public EnemyCollisionCheck checkCollision;
     [Header("撃破された時のSE")] public AudioClip deadSE;
-
-    public GameObject blockPrefab;
-
     #endregion
 
     #region//プライベート変数

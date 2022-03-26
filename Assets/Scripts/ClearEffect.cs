@@ -6,8 +6,10 @@ public class ClearEffect : MonoBehaviour
 {
     [Header("拡大縮小AnimationCurve")] public AnimationCurve curve;
     [Header("ステージコントローラー")] public StageCtrl ctrl;
+
     private bool comp = false;     
     private float timer;
+
     private void Start()
     {
          transform.localScale = Vector3.zero;

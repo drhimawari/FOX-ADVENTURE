@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class FadeActiveUGUI : MonoBehaviour
 {
+    #region//インスペクターで設定する
     [Header("フェードスピード")] public float speed = 1.0f;
     [Header("上昇量")] public float moveDis = 10.0f;
     [Header("上昇時間")] public float moveTime = 1.0f;
     [Header("キャンバスグループ")] public CanvasGroup cg;
     [Header("プレイヤー判定")] public PlayerTriggerCheck trigger;
+    #endregion
 
+    #region//プライベート変数
     private Vector3 defaltPos;
     private float timer = 0.0f;
+    #endregion
 
     private void Start()
     {
